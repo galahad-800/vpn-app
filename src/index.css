@@ -49,3 +49,96 @@
 .custom-hover-movie-card:hover img:hover {
     filter: brightness(70%);
 }
+
+/*---------------------------------------------------------------------*/
+
+.slider-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 20px;
+    padding: 10px 0;
+    /*scrollbar-width: thin;*/
+}
+
+.slider::-webkit-scrollbar {
+    display: block !important;
+    width: 9px;
+}
+
+.slider::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.slider::-webkit-scrollbar-thumb {
+    background-color: #4E5281;
+    border-radius: 15px;
+    border: 3px solid #f1f1f1;
+}
+
+.card {
+    min-width: 420px;
+    border: 2px solid #22356f;
+    border-radius: 12px;
+    padding: 16px;
+    flex-shrink: 0;
+    background-color: white;
+    text-align: left;
+}
+
+.card h3 {
+    font-size: 18px;
+    color: #22356f;
+    margin: 0 0 8px;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #444;
+    margin-bottom: 12px;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #e60044;
+    margin-bottom: 12px;
+}
+
+.buy-button {
+    background-color: #e60044;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.scroll-button {
+    background-color: white;
+    border: 1px solid #22356f;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    font-size: 18px;
+    color: #22356f;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.scroll-button.left {
+    margin-right: 10px;
+}
+
+.scroll-button.right {
+    margin-left: 10px;
+}
