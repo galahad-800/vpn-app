@@ -1,5 +1,5 @@
-import { Box, Button, Container, Flex, Image, Text } from '@mantine/core'
 import vpnLogo from '../../assets/Block1/LogoVpn.png'
+import { Box, Button, Container, Flex, Image, Text } from '@mantine/core'
 
 export function IntroSection() {
     return (
@@ -58,4 +58,3 @@ export function IntroSection() {
         </section>
     )
 }
-
