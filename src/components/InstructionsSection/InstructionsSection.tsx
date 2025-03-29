@@ -22,8 +22,8 @@ export function InstructionsSection() {
                         </Text>
                     </Flex>
                     <Flex justify={'space-between'}>
-                        <Flex justify={'center'} p={'0 0 0 108'}>
-                            <Image src={pc} />
+                        <Flex justify={'center'} p={'0 0 0 108'} >
+                            <Image src={pc} className='gradient'/>
                         </Flex>
                         <Flex
                             direction={'column'}

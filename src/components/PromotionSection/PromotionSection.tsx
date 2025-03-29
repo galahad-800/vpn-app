@@ -3,13 +3,13 @@ import { Box, Button, Container, Flex, Text } from '@mantine/core'
 export function PromotionSection() {
     return (
         <section
-            className={'gradient'}
             style={{
-                background: '#4E5281',
+                background: 'radial-gradient(40% 50% at 50% 50%, var(--Primary-Yellow, #FFC301) 0%, var(--Secondary-Dark-Navy, #4E5281) 100%)',
                 padding: '36px',
             }}
         >
             <Container size='xl'>
+             <Box w='73%'>
                 <Flex direction={'column'} gap={'64'}>
                     <Flex>
                         <Text
@@ -22,7 +22,7 @@ export function PromotionSection() {
                             Попробуйте за 1 рубль на 7 дней!
                         </Text>
                     </Flex>
-                    <Flex justify={'center'} gap={'190'}>
+                    <Flex justify={'end'} gap={'190'}>
                         <Text
                             style={{
                                 color: '#FFF',
@@ -40,6 +40,7 @@ export function PromotionSection() {
                         </Box>
                     </Flex>
                 </Flex>
+             </Box>
             </Container>
         </section>
     )

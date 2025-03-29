@@ -3,13 +3,11 @@ import { Box, Button, Container, Flex, Image, Text } from '@mantine/core'
 
 export function IntroSection() {
     return (
-        <section
-            style={{
-                background: '#4E5281',
-            }}
-        >
-            <Container size='lg'>
-                <Flex justify='space-between' align='center'>
+        <section className='introgradient' style={{
+            padding:'28px'
+        }}>
+            <Container size='lg' >
+                <Flex justify='space-between' align='center'  >
                     <Flex direction='column' gap='md'>
                         <Flex direction='column' gap={'md'}>
                             <Text
@@ -51,7 +49,7 @@ export function IntroSection() {
                         </Flex>
                     </Flex>
                     <Box>
-                        <Image src={vpnLogo} alt='Logo' />
+                        <Image src={vpnLogo} alt='Logo'/>
                     </Box>
                 </Flex>
             </Container>

@@ -142,3 +142,14 @@
 .scroll-button.right {
     margin-left: 10px;
 }
+
+/*---------------------------------------------------------------------*/
+
+.gradient{
+    background: radial-gradient(50% 50% at 50% 50%, var(--Primary-Aqua, #31DFF6) 0%, var(--Text-White, #FFF) 100%);
+}
+
+.introgradient{
+    background: radial-gradient(20% 50.15% at 66.88% 50%, var(--Primary-Yellow, #FFC301) 0%, var(--Secondary-Dark-Navy, #4E5281) 100%);
+
+}

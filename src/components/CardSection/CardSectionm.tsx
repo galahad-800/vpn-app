@@ -69,6 +69,7 @@ export function CardSection() {
                                 </Card>
 
                                 <Card
+                                    h={140}
                                     w={412}
                                     radius={'16'}
                                     style={{
