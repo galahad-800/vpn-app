@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+html, body {
+    font-family: "Nunito", sans-serif;
+}
+
 .custom-scrollbar {
     overflow-x: auto !important;
     scrollbar-width: auto !important;

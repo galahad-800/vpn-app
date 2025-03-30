@@ -32,13 +32,7 @@ export function IntroSection() {
                             </Text>
                         </Flex>
                         <Flex align='center' gap={'md'}>
-                            <Text
-                                style={{
-                                    color: '#FFF',
-                                    fontSize: '18px',
-                                    weight: '400',
-                                }}
-                            >
+                            <Text variant='body1'>
                                 Попробовать за 1 рубль на 7 дней
                             </Text>
                             <Box>

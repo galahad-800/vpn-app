@@ -7,18 +7,18 @@ import './index.css'
 import '@mantine/core/styles.css'
 
 const theme = createTheme({
-    fontFamily: 'Arial, sans-serif',
+    fontFamily: '"Nunito", sans-serif',
 
     components: {
         Text: Text.extend({
             styles: (_, { variant }) => {
-                if (variant === 'subtitle') {
+                if (variant === 'body1') {
                     return {
                         root: {
-                            fontSize: '21px',
-                            fontWeight: 500,
-                            fontStyle: 'normal',
-                            fontFamily: 'monospace',
+                            fontSize: '18px',
+                            fontWeight: 300,
+                            fontFamily: '"Roboto Condensed", sans-serif',
+                            color: '#FFF'
                         },
                     }
                 }

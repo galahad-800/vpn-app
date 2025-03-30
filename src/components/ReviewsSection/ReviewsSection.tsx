@@ -56,7 +56,21 @@ export function ReviewsSection() {
                 <Box>
                     <Flex direction='column' gap='md' align='center'>
                         <Flex wrap='wrap' justify='center' gap='md'>
-                            {reviews.map(review => (
+                            {reviews.slice(0, 3).map(review => (
+                                <Card
+                                    key={review.id}
+                                    shadow='sm'
+                                    padding='lg'
+                                    radius='md'
+                                    style={{ width: '300px' }}
+                                >
+                                    <Text size='sm'>{review.text}</Text>
+                                </Card>
+                            ))}
+                        </Flex>
+
+                        <Flex wrap='wrap' justify='center' gap='md'>
+                            {reviews.slice(3, 7).map(review => (
                                 <Card
                                     key={review.id}
                                     shadow='sm'
