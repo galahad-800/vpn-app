@@ -8,7 +8,7 @@ export function CardSection() {
                 padding: '36px',
             }}
         >
-            <Container size='xl'>
+            <Container size='md'>
                 <Flex justify={'left'}>
                     <Text
                         style={{

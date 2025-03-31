@@ -7,7 +7,7 @@ export function PlanSection() {
                 padding: '36px',
             }}
         >
-            <Container size='lg'>
+            <Container size='sm'>
                 <Flex direction={'column'} gap={'md'}>
                     <Text
                         style={{

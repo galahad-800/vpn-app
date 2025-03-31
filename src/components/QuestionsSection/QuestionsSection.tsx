@@ -53,7 +53,7 @@ export function QuestionsSection() {
         <section style={{
             paddingBottom: '30px'
         }}>
-            <Container size='xl'>
+            <Container size='md'>
                 <Flex justify='left'>
                     <Text
                         style={{
@@ -67,7 +67,7 @@ export function QuestionsSection() {
                 </Flex>
             </Container>
 
-            <Container size='lg'>
+            <Container size='sm'>
                 <Flex direction='column' w='83%'>
                     {faqList.map(faq => (
                         <Flex direction='column' gap='md' key={faq.id}>

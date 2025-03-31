@@ -38,7 +38,7 @@ export function PricesSection() {
 
     return (
         <section>
-            <Container size={'xl'}>
+            <Container size={'md'}>
                 <Flex justify={'left'}>
                     <Text
                         style={{

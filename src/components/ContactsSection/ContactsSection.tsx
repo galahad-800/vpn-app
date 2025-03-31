@@ -8,7 +8,7 @@ export function ContactsSection() {
                 padding: '36px',
             }}
         >
-            <Container size='xl'>
+            <Container size='md'>
                <Box w='65%'>
                    <Flex>
                        <Text

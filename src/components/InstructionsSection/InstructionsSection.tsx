@@ -8,7 +8,7 @@ export function InstructionsSection() {
                 padding: '36px',
             }}
         >
-            <Container size='xl'>
+            <Container size='md'>
                 <Flex direction='column' gap='md'>
                     <Flex justify={'left'}>
                         <Text

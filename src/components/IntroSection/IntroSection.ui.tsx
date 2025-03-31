@@ -6,7 +6,7 @@ export function IntroSection() {
         <section className='introgradient' style={{
             padding:'28px'
         }}>
-            <Container size='lg' >
+            <Container size='md' >
                 <Flex justify='space-between' align='center'  >
                     <Flex direction='column' gap='md'>
                         <Flex direction='column' gap={'md'}>

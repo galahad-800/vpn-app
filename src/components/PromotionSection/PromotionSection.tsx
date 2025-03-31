@@ -8,7 +8,7 @@ export function PromotionSection() {
                 padding: '36px',
             }}
         >
-            <Container size='xl'>
+            <Container size='md'>
              <Box w='73%'>
                 <Flex direction={'column'} gap={'64'}>
                     <Flex>

@@ -8,7 +8,7 @@ export function Header() {
                 background: '#4E5281',
             }}
         >
-            <Container size='xl'>
+            <Container size='md'>
                 <Flex
                     justify='space-between'
                     align='center'
