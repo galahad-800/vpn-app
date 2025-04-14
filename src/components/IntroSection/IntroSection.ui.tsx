@@ -11,9 +11,9 @@ export function IntroSection() {
                 sm: 'radial-gradient(20% 50.15% at 66.88% 50%, var(--Primary-Yellow, #FFC301) 0%, var(--Secondary-Dark-Navy, #4E5281) 100%)',
             }}>
 
-                <Container px={20}>
+                <Container>
                     <Grid align="center">
-                        <Grid.Col span={{ base: 12, sm: 6 }} offset={{ base: 0, sm: 1 }} style={{ zIndex: '2' }}>
+                        <Grid.Col span={{ base: 12, sm: 6 }} offset={{base: 0, sm: 1}} style={{ zIndex: '2' }}>
                             <Grid columns={6}>
                                 <Grid.Col span={6}>
                                     <Text

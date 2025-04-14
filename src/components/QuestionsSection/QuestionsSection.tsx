@@ -77,7 +77,7 @@ export function QuestionsSection() {
                                 style={{
                                     borderRadius:
                                         activeId !== faq.id
-                                            ? '0 0 5px 5px'
+                                            ? '32px'
                                             : '',
                                     borderBottom:
                                         activeId !== faq.id

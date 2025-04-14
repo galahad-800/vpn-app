@@ -36,7 +36,7 @@ export function PricesSection() {
 
     return (
         <AppShell.Section>
-            <Container px={20}>
+            <Container px={20} pt={36}>
                 <Flex justify={'left'}>
                     <Text
                         style={{
@@ -49,7 +49,7 @@ export function PricesSection() {
                     </Text>
                 </Flex>
             </Container>
-            <Container >
+            <Container pt={36} pb={36} >
                 <Flex direction="column" gap="md" px={{base: 0, lg: 20}}>
                     <SubscriptionSlider plans={STANDARD_PLAN} />
                     <SubscriptionSlider plans={VIP_PLAN} />

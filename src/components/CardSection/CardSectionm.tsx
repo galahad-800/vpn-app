@@ -8,7 +8,7 @@ export function CardSection() {
                 background: '#EA5DA0',
             }}
         >
-            <Container px={20}>
+            <Container px={20} pb={36}>
                 <Box>
                     <Flex justify={'left'}>
                         <Text

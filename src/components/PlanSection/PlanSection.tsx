@@ -3,7 +3,7 @@ import { AppShell, Box, Button, Container, Flex, Text } from '@mantine/core'
 export function PlanSection() {
     return (
         <AppShell.Section>
-            <Container px={20}>
+            <Container px={20} pt={48} pb={36}>
                 <Flex direction={'column'} gap={'md'}>
                     <Text
                         style={{

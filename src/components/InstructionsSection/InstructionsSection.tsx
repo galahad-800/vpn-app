@@ -4,7 +4,7 @@ import { Container, Text, Image, AppShell, Grid } from '@mantine/core'
 export function InstructionsSection() {
     return (
         <AppShell.Section>
-            <Container px={20} >
+            <Container px={20} pt={36} pb={36}>
                 <Text
                     style={{
                         color: '#2C4D96',
