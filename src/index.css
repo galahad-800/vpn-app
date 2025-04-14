@@ -3,6 +3,22 @@
     margin: 0;
 }
 
+:root {
+    --var-title-size-md: 32px
+}
+
+@media (min-width: 576px) {
+    :root {
+        --var-title-size-md: 48px
+    }
+}
+
+@media (min-width: 768px) {
+    :root {
+        --var-title-size-md: 72px
+    }
+}
+
 html, body {
     font-family: "Nunito", sans-serif;
 }
@@ -27,6 +43,7 @@ html, body {
     border-radius: 15px;
     border: 3px solid #f1f1f1;
 }
+
 /*.mantine-Grid-inner {*/
 /*    width: 100% !important;*/
 /*}*/
@@ -37,11 +54,13 @@ html, body {
     transition: transform 0.2s ease-in-out;
     cursor: pointer;
 }
+
 .custom-hover-movie-card:hover {
     color: #b39c74;
     transition: color 0.3s ease-in-out;
     filter: brightness(70%);
 }
+
 .custom-hover-movie-card:hover img {
     img {
         display: block;
@@ -50,6 +69,7 @@ html, body {
         transition: filter 0.3s ease-in-out;
     }
 }
+
 .custom-hover-movie-card:hover img:hover {
     filter: brightness(70%);
 }
@@ -61,7 +81,7 @@ html, body {
     display: flex;
     align-items: center;
     overflow: hidden;
-    padding: 20px;
+
 }
 
 .slider {
@@ -92,7 +112,7 @@ html, body {
 .card {
     min-width: 420px;
     border: 2px solid #22356f;
-    border-radius: 12px;
+    border-radius: 32px;
     padding: 16px;
     flex-shrink: 0;
     background-color: white;
@@ -100,20 +120,28 @@ html, body {
 }
 
 .card h3 {
-    font-size: 18px;
+    font-size: 40px;
     color: #22356f;
     margin: 0 0 8px;
 }
 
 .subtitle {
-    font-size: 14px;
+    font-size: 18px;
+    font-weight: 400;
     color: #444;
     margin-bottom: 12px;
+    font-family: Roboto Condensed;
+}
+
+.button {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
 }
 
 .price {
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 40px;
+    font-weight: 700;
     color: #e60044;
     margin-bottom: 12px;
 }
@@ -149,11 +177,9 @@ html, body {
 
 /*---------------------------------------------------------------------*/
 
-.gradient{
+.gradient {
     background: radial-gradient(50% 50% at 50% 50%, var(--Primary-Aqua, #31DFF6) 0%, var(--Text-White, #FFF) 100%);
 }
 
-.introgradient{
-    background: radial-gradient(20% 50.15% at 66.88% 50%, var(--Primary-Yellow, #FFC301) 0%, var(--Secondary-Dark-Navy, #4E5281) 100%);
+/*---------------------------------------------------------------------*/
 
-}

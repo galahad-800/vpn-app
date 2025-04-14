@@ -1,4 +1,4 @@
-import { Box, Card, Container, Flex, Text } from '@mantine/core'
+import { AppShell, Box, Card, Container, Flex, Text } from '@mantine/core'
 
 export const reviews = [
     {
@@ -49,18 +49,13 @@ export const reviews = [
 
 export function ReviewsSection() {
     return (
-        <section
-            style={{
-                background: '#FF7401',
-                padding: '0px 0px 64px 0px',
-            }}
-        >
-            <Container size='md'>
+        <AppShell.Section style={{ background: '#FF7401' }}>
+            <Container px={20}>
                 <Flex gap={'md'} p={'50 0 0 0'}>
                     <Text
                         style={{
                             color: '#FFF',
-                            fontSize: '72px',
+                            fontSize: 'var(--var-title-size-md)',
                             fontWeight: '700',
                         }}
                     >
@@ -68,27 +63,27 @@ export function ReviewsSection() {
                     </Text>
                 </Flex>
             </Container>
-            <Container size={'lg'}>
-                <Flex direction='column' gap='lg'>
+            <Container px={20}>
+                <Flex direction="column" gap="lg">
                     {reviews.map((row, rowIndex) => (
                         <Flex
                             key={rowIndex}
-                            justify='space-between'
-                            w='85%'
+                            justify="space-between"
+                            w="85%"
                             style={{
                                 margin: 'auto',
                             }}
                         >
                             {row.oneLine && (
                                 <>
-                                    <Card w={305} h={125} radius='lg'>
+                                    <Card w={305} h={125} radius="lg">
                                         {row.oneLine[0].text}
                                     </Card>
 
                                     <Flex
-                                        justify='space-between'
-                                        align='center'
-                                        w='42%'
+                                        justify="space-between"
+                                        align="center"
+                                        w="42%"
                                     >
                                         {
                                             // eslint-disable-next-line @typescript-eslint/ban-ts-comment
@@ -98,7 +93,7 @@ export function ReviewsSection() {
                                                     key={item.id}
                                                     w={305}
                                                     h={150}
-                                                    radius='lg'
+                                                    radius="lg"
                                                 >
                                                     {item.text}
                                                 </Card>
@@ -106,7 +101,7 @@ export function ReviewsSection() {
                                         }
                                     </Flex>
 
-                                    <Card w={305} h={125} radius='lg'>
+                                    <Card w={305} h={125} radius="lg">
                                         {row.oneLine[2].text}
                                     </Card>
                                 </>
@@ -115,21 +110,21 @@ export function ReviewsSection() {
                             {row.twoLine &&
                                 row.twoLine.map(subRow => (
                                     <Box
-                                        w='80%'
+                                        w="80%"
                                         style={{
                                             margin: 'auto',
                                         }}
                                     >
                                         <Flex
-                                            key='someKey'
-                                            gap='md'
-                                            justify='space-between'
+                                            key="someKey"
+                                            gap="md"
+                                            justify="space-between"
                                         >
                                             {subRow.three.map(review => (
                                                 <Card
                                                     key={review.id}
                                                     w={305}
-                                                    radius='lg'
+                                                    radius="lg"
                                                 >
                                                     {review.text}
                                                 </Card>
@@ -141,6 +136,6 @@ export function ReviewsSection() {
                     ))}
                 </Flex>
             </Container>
-        </section>
+        </AppShell.Section>
     )
 }

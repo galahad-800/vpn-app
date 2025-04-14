@@ -1,5 +1,5 @@
 import logo from '../assets/Logo/Logo.svg'
-import { Container, Flex, Image, Text } from '@mantine/core'
+import { Container, Flex, Grid, Image, Text } from '@mantine/core'
 
 export function Footer() {
     return (
@@ -10,55 +10,88 @@ export function Footer() {
             }}
         >
             <Container>
-                <Flex direction={'column'} gap={'xl'}>
                     <Flex justify={'center'}>
                         <Image src={logo} />
                     </Flex>
-                    <Flex
-                        gap='xl'
-                        justify={'center'}
-                        style={{
-                            color: '#fff',
-                            fontSize: '20px',
-                            fontWeight: '600',
-                        }}
-                    >
-                        <Text component='a' href={'#'}>
-                            Преимущества
-                        </Text>
-                        <Text component='a' href={'#'}>
-                            Ценыс
-                        </Text>
-                        <Text component='a' href={'#'}>
-                            Отзывы
-                        </Text>
-                        <Text component='a' href={'#'}>
-                            Частые вопросы
-                        </Text>
-                        <Text component='a' href={'#'}>
-                            Поддержка
-                        </Text>
-                    </Flex>
-                    <Flex
-                        gap='xl'
-                        justify={'center'}
-                        style={{
-                            color: '#fff',
-                            fontSize: '16px',
-                            fontWeight: '300',
-                        }}
-                    >
-                        <Text component='a' href={'#'}>
-                            Пользовательское соглашение
-                        </Text>
-                        <Text component='a' href={'#'}>
-                            Политика конфиденциальности
-                        </Text>
-                        <Text component='a' href={'#'}>
-                            Правила использования
-                        </Text>
-                    </Flex>
-                </Flex>
+                    <Grid justify={'center'} gutter="xl" pt={36}>
+                        <Grid.Col span="content">
+                            <Text component='a' href={'#'} style={{
+                                color: '#fff',
+                                fontSize: '20px',
+                                fontWeight: '600',
+                            }}>
+                                Преимущества
+                            </Text>
+                        </Grid.Col>
+                        <Grid.Col span="content">
+                            <Text component='a' href={'#'} style={{
+                                color: '#fff',
+                                fontSize: '20px',
+                                fontWeight: '600',
+                            }}>
+                                Цены
+                            </Text>
+                        </Grid.Col>
+                        <Grid.Col span="content">
+                            <Text component='a' href={'#'} style={{
+                                color: '#fff',
+                                fontSize: '20px',
+                                fontWeight: '600',
+                            }}>
+                                Отзывы
+                            </Text>
+                        </Grid.Col>
+                        <Grid.Col span="content">
+                            <Text component='a' href={'#'} style={{
+                                color: '#fff',
+                                fontSize: '20px',
+                                fontWeight: '600',
+                            }}>
+                                Частые вопросы
+                            </Text>
+                        </Grid.Col>
+                        <Grid.Col span="content">
+                            <Text component='a' href={'#'} style={{
+                                color: '#fff',
+                                fontSize: '20px',
+                                fontWeight: '600',
+                            }}>
+                                Поддержка
+                            </Text>
+                        </Grid.Col>
+                    </Grid>
+                    <Grid justify={'center'} pt={28}>
+                        <Grid.Col span="content">
+                            <Text component='a' href={'#'} style={{
+                                color: '#fff',
+                                fontSize: '16px',
+                                fontWeight: '300',
+                                fontFamily:'Roboto Condensed'
+                            }}>
+                                Пользовательское соглашение
+                            </Text>
+                        </Grid.Col>
+                        <Grid.Col span="content">
+                            <Text component='a' href={'#'} style={{
+                                color: '#fff',
+                                fontSize: '16px',
+                                fontWeight: '300',
+                                fontFamily:'Roboto Condensed'
+                            }}>
+                                Политика конфиденциальности
+                            </Text>
+                        </Grid.Col>
+                        <Grid.Col span="content">
+                            <Text component='a' href={'#'} style={{
+                                color: '#fff',
+                                fontSize: '16px',
+                                fontWeight: '300',
+                                fontFamily:'Roboto Condensed'
+                            }}>
+                                Правила использования
+                            </Text>
+                        </Grid.Col>
+                    </Grid>
             </Container>
         </section>
     )

@@ -17,8 +17,10 @@ export function SubscriptionSlider({plans}: { plans: Plan[] }) {
                     <div key={index} className='card'>
                         <h3>{plan.title}</h3>
                         <p className='subtitle'>{plan.subtitle}</p>
-                        <div className='price'>{plan.price} ₽</div>
-                        <Button bg='#e60044' radius='md'>Приобрести</Button>
+                        <div className='button'>
+                            <div className='price'>{plan.price} ₽</div>
+                            <Button bg='#FF1441' radius='16' justify={'center'} size={'lg'}>Приобрести</Button>
+                        </div>
                     </div>
                 ))}
             </div>

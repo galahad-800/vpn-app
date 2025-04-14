@@ -9,6 +9,7 @@ import { PromotionSection } from '../../components/PromotionSection/PromotionSec
 import { QuestionsSection } from '../../components/QuestionsSection/QuestionsSection.tsx'
 import { ReviewsSection } from '../../components/ReviewsSection/ReviewsSection.tsx'
 
+
 export function HomePage() {
     return (
         <Layout>

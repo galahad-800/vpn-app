@@ -1,62 +1,81 @@
 import pc from '../../assets/Block3/PC.png'
-import { Container, Flex, Text, Image } from '@mantine/core'
+import { Container, Text, Image, AppShell, Grid } from '@mantine/core'
 
 export function InstructionsSection() {
     return (
-        <section
-            style={{
-                padding: '36px',
-            }}
-        >
-            <Container size='md'>
-                <Flex direction='column' gap='md'>
-                    <Flex justify={'left'}>
-                        <Text
-                            style={{
-                                color: '#2C4D96',
-                                fontSize: '72px',
-                                fontWeight: '700',
-                            }}
-                        >
-                            Как это работает?
-                        </Text>
-                    </Flex>
-                    <Flex justify={'space-between'}>
-                        <Flex justify={'center'} p={'0 0 0 108'} >
-                            <Image src={pc} className='gradient'/>
-                        </Flex>
-                        <Flex
-                            direction={'column'}
-                            justify={'center'}
-                            gap={'md'}
-                        >
-                            <Text
-                                c={'#0C8DFE'}
-                                style={{
-                                    fontSize: '28px',
-                                    fontWeight: '700',
-                                }}
-                            >
-                                Пошаговое описание подключения:
-                            </Text>
-                            <Text>
-                                Скачайте приложение или подключитесь через
-                                Telegram-бота{' '}
-                            </Text>
-                            <Text>
-                                Выберите сервер – список стран и регионов{' '}
-                            </Text>
-                            <Text>
-                                Нажмите "Подключиться" – зашифрованный канал
-                                активен{' '}
-                            </Text>
-                            <Text>
-                                Наслаждайтесь интернетом без ограничений
-                            </Text>
-                        </Flex>
-                    </Flex>
-                </Flex>
+        <AppShell.Section>
+            <Container px={20} >
+                <Text
+                    style={{
+                        color: '#2C4D96',
+                        fontSize: 'var(--var-title-size-md)',
+                        fontWeight: '700',
+                    }}
+                >
+                    Как это работает?
+                </Text>
+                <Grid align={'center'}>
+                    <Grid.Col span={{ base: 12, sm: 4 }} offset={{ base: 0, sm: 1 }}>
+                        <Image src={pc} className="gradient" mah={'100%'} />
+                    </Grid.Col>
+
+                    <Grid.Col span={{ base: 12, sm: 6 }} offset={{ base: 0, sm: 1 }}>
+                        <Grid align={'center'}>
+                            <Grid.Col>
+                                <Text
+                                    c={'#0C8DFE'}
+                                    style={{
+                                        fontSize: '28px',
+                                        fontWeight: '700',
+                                    }}
+                                >
+                                    Пошаговое описание подключения:
+                                </Text>
+                            </Grid.Col>
+                            <Grid.Col>
+                                <Text style={{
+                                    fontSize: '18px',
+                                    fontFamily: 'Roboto Condensed',
+                                    fontWeight: '400px',
+                                }}>
+                                    Скачайте приложение или подключитесь через
+                                    Telegram-бота{' '}
+                                </Text>
+                            </Grid.Col>
+                            <Grid.Col>
+                                <Text style={{
+                                    fontSize: '18px',
+                                    fontFamily: 'Roboto Condensed',
+                                    fontWeight: '400px',
+                                }}>
+                                    Выберите сервер – список стран и регионов{' '}
+                                </Text>
+                            </Grid.Col>
+                            <Grid.Col>
+                                <Text style={{
+                                    fontSize: '18px',
+                                    fontFamily: 'Roboto Condensed',
+                                    fontWeight: '400px',
+                                }}>
+                                    Нажмите "Подключиться" – зашифрованный канал
+                                    активен{' '}
+                                </Text>
+                            </Grid.Col>
+                            <Grid.Col>
+                                <Text style={{
+                                    fontSize: '18px',
+                                    fontFamily: 'Roboto Condensed',
+                                    fontWeight: '400px',
+                                }}>
+                                    Наслаждайтесь интернетом без ограничений
+                                </Text>
+                            </Grid.Col>
+                        </Grid>
+                    </Grid.Col>
+
+                </Grid>
+
             </Container>
-        </section>
+        </AppShell.Section>
     )
 }

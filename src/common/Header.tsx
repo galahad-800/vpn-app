@@ -1,42 +1,54 @@
 import logo from '../assets/Logo/Logo.svg'
-import { Box, Button, Container, Flex, Image, Text } from '@mantine/core'
+import { AppShell, Button, Container, Grid, Image, Text } from '@mantine/core'
+import { IconMenu2 } from '@tabler/icons-react'
+import Logomobile from '../assets/Logo/Logomobile.svg'
+
 
 export function Header() {
+
     return (
-        <header
+        <AppShell.Header
+
             style={{
                 background: '#4E5281',
             }}
         >
-            <Container size='md'>
-                <Flex
-                    justify='space-between'
-                    align='center'
-                    c='#FFF'
-                    wrap='wrap'
-                >
-                    <Box p={'16'}>
-                        <Image src={logo} alt='Logo' />
-                    </Box>
-                    <Flex gap='xl' wrap='wrap'>
-                        <Text component='a' href={'#'}>
+            <Container size="md" p={'md'}>
+                <Grid align={'center'} gutter="xl">
+                    <Grid.Col span={{ base: 3, sm: 1 }}>
+                        <Image src={logo} alt="Logo" />
+                    </Grid.Col>
+                    <Grid.Col span={'content'} display={{ base: 'block', sm: 'none' }}>
+                        <Image src={Logomobile} />
+                    </Grid.Col>
+                    <Grid.Col span={'auto'}  display={{ base: 'none', sm: 'block' }}></Grid.Col>
+                    <Grid.Col span="content" display={{ base: 'none', sm: 'block' }}>
+                        <Text component="a" href="#" color="white" style={{ textDecoration: 'none' }}>
                             Преимущества
                         </Text>
-                        <Text component='a' href={'#'}>
-                            Ценыс
+                    </Grid.Col>
+                    <Grid.Col span="content" display={{ base: 'none', sm: 'block' }}>
+                        <Text component="a" href="#" color="white" style={{ textDecoration: 'none' }}>
+                            Цены
                         </Text>
-                        <Text component='a' href={'#'}>
+                    </Grid.Col>
+                    <Grid.Col span="content" display={{ base: 'none', sm: 'block' }}>
+                        <Text component="a" href="#" color="white" style={{ textDecoration: 'none' }}>
                             Отзывы
                         </Text>
-                        <Text component='a' href={'#'}>
+                    </Grid.Col>
+                    <Grid.Col span="content" display={{ base: 'none', sm: 'block' }}>
+                        <Text component="a" href="#" color="white" style={{ textDecoration: 'none' }}>
                             Частые вопросы
                         </Text>
-                        <Text component='a' href={'#'}>
+                    </Grid.Col>
+                    <Grid.Col span="content" display={{ base: 'none', sm: 'block' }}>
+                        <Text component="a" href="#" color="white" style={{ textDecoration: 'none' }}>
                             Поддержка
                         </Text>
-                    </Flex>
-
-                    <Flex direction='column'>
+                    </Grid.Col>
+                    <Grid.Col span={'auto'} ></Grid.Col>
+                    <Grid.Col span={'content'} display={{ base: 'none', sm: 'block' }}>
                         <Button
                             radius={'16px'}
                             style={{
@@ -45,9 +57,17 @@ export function Header() {
                         >
                             Попробовать за 1 ₽
                         </Button>
-                    </Flex>
-                </Flex>
+                    </Grid.Col>
+
+                    <Grid.Col span={'content'} display={{ base: 'block', sm: 'none' }}>
+                        <Button variant="subtle" color="white">
+                            <IconMenu2 />
+                        </Button>
+                    </Grid.Col>
+
+                </Grid>
+
             </Container>
-        </header>
+        </AppShell.Header>
     )
 }

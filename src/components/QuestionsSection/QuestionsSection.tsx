@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-import { Collapse, Container, Flex, Text } from '@mantine/core'
+import { AppShell, Collapse, Container, Flex, Text } from '@mantine/core'
 import { IconChevronDown } from '@tabler/icons-react'
 
 export type FaqItem = {
@@ -50,15 +50,15 @@ export function QuestionsSection() {
     }
 
     return (
-        <section style={{
-            paddingBottom: '30px'
+        <AppShell.Section style={{
+            paddingBottom: '30px',
         }}>
-            <Container size='md'>
-                <Flex justify='left'>
+            <Container px={20}>
+                <Flex justify="left">
                     <Text
                         style={{
                             color: '#2C4D96',
-                            fontSize: '72px',
+                            fontSize: 'var(--var-title-size-md)',
                             fontWeight: '700',
                         }}
                     >
@@ -67,13 +67,13 @@ export function QuestionsSection() {
                 </Flex>
             </Container>
 
-            <Container size='sm'>
-                <Flex direction='column' w='83%'>
+            <Container px={20}>
+                <Flex direction="column" >
                     {faqList.map(faq => (
-                        <Flex direction='column' gap='md' key={faq.id}>
+                        <Flex direction="column" gap="md" key={faq.id}>
                             <Flex
-                                justify='space-between'
-                                align='center'
+                                justify="space-between"
+                                align="center"
                                 style={{
                                     borderRadius:
                                         activeId !== faq.id
@@ -89,7 +89,7 @@ export function QuestionsSection() {
                                 onClick={() => toggle(faq.id)}
                             >
                                 <Text
-                                    c='#000'
+                                    c="#000"
                                     fw={700}
                                     style={{
                                         fontSize: '21px',
@@ -100,7 +100,7 @@ export function QuestionsSection() {
 
                                 <IconChevronDown
                                     size={16}
-                                    color='#2C4D96'
+                                    color="#2C4D96"
                                     stroke={2}
                                     style={{
                                         transform:
@@ -121,6 +121,6 @@ export function QuestionsSection() {
                     ))}
                 </Flex>
             </Container>
-        </section>
+        </AppShell.Section>
     )
 }

@@ -1,6 +1,5 @@
 import { Plan, SubscriptionSlider } from '../SubscriptionSlider/SubscriptionSlider.tsx'
-import { Container, Flex, Text } from '@mantine/core'
-
+import { AppShell, Container, Flex, Text } from '@mantine/core'
 
 
 export function PricesSection() {
@@ -10,7 +9,6 @@ export function PricesSection() {
         { title: 'Трехмесячная', subtitle: 'Подписка на 3 месяца', price: 500 },
         { title: 'Годовая', subtitle: 'Подписка на 1 год', price: 2000 },
     ]
-
 
 
     const VIP_PLAN: Plan[] = [
@@ -37,25 +35,26 @@ export function PricesSection() {
     ]
 
     return (
-        <section>
-            <Container size={'md'}>
+        <AppShell.Section>
+            <Container px={20}>
                 <Flex justify={'left'}>
                     <Text
                         style={{
                             color: '#2C4D96',
-                            fontSize: '72px',
+                            fontSize: 'var(--var-title-size-md)',
                             fontWeight: '700',
                         }}
                     >
                         Тарифы и цены
                     </Text>
                 </Flex>
-
-                <Flex direction='column' gap='md'>
+            </Container>
+            <Container >
+                <Flex direction="column" gap="md" px={{base: 0, lg: 20}}>
                     <SubscriptionSlider plans={STANDARD_PLAN} />
                     <SubscriptionSlider plans={VIP_PLAN} />
                 </Flex>
             </Container>
-        </section>
+        </AppShell.Section>
     )
 }
