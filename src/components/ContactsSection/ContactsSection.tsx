@@ -4,7 +4,7 @@ import { AppShell, Card, Container, Flex, Grid, Group, Image, Text } from '@mant
 export function ContactsSection() {
     return (
         <AppShell.Section>
-            <Container px={20}>
+            <Container px={20} pt={36} pb={36}>
                 <Text
                     style={{
                         color: '#2C4D96',
@@ -24,12 +24,12 @@ export function ContactsSection() {
                             }}
                         >
                             <Group>
-                                <Image src={LogoCard} />
+                                <Image src={LogoCard} className='logocard'  />
                                 <Flex direction={'column'}>
                                     <Text
                                         style={{
                                             color: '#FFF',
-                                            fontSize: '56px',
+                                            fontSize: 'var(--var-text-size-md)',
                                             fontWeight: '700',
                                         }}
                                     >
@@ -38,7 +38,7 @@ export function ContactsSection() {
                                     <Text
                                         style={{
                                             color: '#FFF',
-                                            fontSize: '20px',
+                                            fontSize: 'var(--var-text-size-lg)',
                                             fontWeight: '600',
                                         }}
                                     >
@@ -47,7 +47,7 @@ export function ContactsSection() {
                                         <Text
                                             style={{
                                                 color: '#FFF',
-                                                fontSize: '20px',
+                                                fontSize: 'var(--var-text-size-lg)',
                                                 fontWeight: '600',
                                             }}
                                             component="a"

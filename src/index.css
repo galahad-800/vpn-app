@@ -6,6 +6,37 @@
 :root {
     --var-title-size-md: 32px
 }
+@media (max-width: 576px) {
+    .logocard {
+       max-width: 98px;
+    }
+}
+/*---------------------------------------------------------------------*/
+
+@media (min-width: 576px) {
+    :root {
+        --var-text-size-md: 32px
+    }
+}
+
+@media (min-width: 768px) {
+    :root {
+        --var-text-size-md: 72px
+    }
+}
+
+
+@media (min-width: 768px) {
+    :root {
+        --var-text-size-lg: 20px
+    }
+}
+@media (min-width: 576px) {
+    :root {
+        --var-text-size-lg: 16px
+    }
+}
+/*---------------------------------------------------------------------*/
 
 @media (min-width: 576px) {
     :root {

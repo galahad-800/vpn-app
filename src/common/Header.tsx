@@ -18,8 +18,8 @@ export function Header() {
                     <Grid.Col span={{ base: 3, sm: 1 }}>
                         <Image src={logo} alt="Logo" />
                     </Grid.Col>
-                    <Grid.Col span={'content'} display={{ base: 'block', sm: 'none' }}>
-                        <Image src={Logomobile} />
+                    <Grid.Col span={{base: 5}} display={{ base: 'block', sm: 'none' }}>
+                        <Image src={Logomobile} w={'100%'} />
                     </Grid.Col>
                     <Grid.Col span={'auto'}  display={{ base: 'none', sm: 'block' }}></Grid.Col>
                     <Grid.Col span="content" display={{ base: 'none', sm: 'block' }}>
