@@ -38,7 +38,7 @@ export function PricesSection() {
         <AppShell.Section>
             <Container px={20} pt={36}>
                 <Flex justify={'left'}>
-                    <Title order={1}
+                    <Title order={2}
                         style={{
                             color: '#2C4D96',
                             fontSize: 'var(--var-title-size-md)',

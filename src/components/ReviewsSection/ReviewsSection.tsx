@@ -16,7 +16,7 @@ export function ReviewsSection() {
                 </Title>
 
                 <Grid className="review-grid-container">
-                    <Grid.Col span={{ base: 12, sm: 4, md: 3 }} offset={{ base: 0, sm:2, md: -1 }}>
+                    <Grid.Col span={{ base: 12, sm: 4, md: 3 }} offset={{ base: 0, sm:2, md: 1 }}>
                         <Card radius="lg">
                             <Text style={{
                                 color: '#373535',

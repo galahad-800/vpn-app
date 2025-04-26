@@ -13,6 +13,13 @@ export function Footer() {
                     <Flex justify={'center'}>
                         <Image src={logo} />
                     </Flex>
+                <Flex pt={10} justify={'center'} style={{
+                    color: '#fff',
+                    fontSize: '20px',
+                    fontWeight: '600',
+                }}>
+                    AlexlNos VPN
+                </Flex>
                     <Grid justify={'center'} gutter="xl" pt={36}>
                         <Grid.Col span="content">
                             <Text component='a' href={'#'} style={{

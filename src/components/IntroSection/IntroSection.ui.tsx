@@ -1,5 +1,5 @@
 import vpnLogo from '../../assets/Block1/LogoVpn.png'
-import { AppShell, Box, Button, Container, Grid, Image, Text } from '@mantine/core'
+import { AppShell, Box, Button, Container, Grid, Image, Text, Title } from '@mantine/core'
 
 export function IntroSection() {
 
@@ -13,19 +13,19 @@ export function IntroSection() {
 
                 <Container>
                     <Grid align="center">
-                        <Grid.Col span={{ base: 12, sm: 6 }} offset={{base: 0, sm: 1}} style={{ zIndex: '2' }}>
+                        <Grid.Col span={{ base: 12, sm: 6 }} offset={{ base: 0, sm: 1 }} style={{ zIndex: '2' }}>
                             <Grid columns={6}>
                                 <Grid.Col span={6}>
-                                    <Text
-                                        style={{
-                                            color: '#FFF',
-                                            fontSize: '40px',
-                                            weight: '700',
-                                        }}
+                                    <Title order={1}
+                                           style={{
+                                               color: '#FFF',
+                                               fontSize: '40px',
+                                               weight: '700',
+                                           }}
                                     >
                                         Скоростной и безопасный VPN для свободы в
                                         интернете
-                                    </Text>
+                                    </Title>
                                 </Grid.Col>
 
                                 <Grid.Col span={6}>
@@ -48,9 +48,12 @@ export function IntroSection() {
 
                                 <Grid.Col span={{ base: 6, sm: 3 }}>
                                     <Box>
-                                        <Button radius="16px" bg="#31DFF6">
-                                            Попробовать за 1 ₽
-                                        </Button>
+                                        <a href="https://t.me/alexlnos_vpn_bot">
+                                            <Button radius="16px" bg="#31DFF6">
+                                                Попробовать за 1 ₽
+                                            </Button>
+                                        </a>
+
                                     </Box>
                                 </Grid.Col>
 

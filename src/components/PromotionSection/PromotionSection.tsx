@@ -8,37 +8,38 @@ export function PromotionSection() {
             }}
         >
             <Container px={20} pb={26} pt={26}>
-                            <Title order={1}
-                                style={{
-                                    color: '#FFF',
-                                    fontSize: '56px',
-                                    fontWeight: '700',
-                                }}
-                            >
-                                Попробуйте за 1 рубль на 7 дней!
-                            </Title>
+                <Title order={2}
+                       style={{
+                           color: '#FFF',
+                           fontSize: '56px',
+                           fontWeight: '700',
+                       }}
+                >
+                    Попробуйте за 1 рубль на 7 дней!
+                </Title>
 
-                     <Grid pt={{ base: 16, sm: 64 }}  gutter="xl" >
-                         <Grid.Col  span={'content'} offset={{ base: 0, sm: 1 }}>
-                             <Text
-                                 style={{
-                                     color: '#FFF',
-                                     fontSize: '20px',
-                                     fontWeight: '600',
-                                 }}
-                             >
-                                 Акция заканчивается через 24 часа!
-                             </Text>
-                         </Grid.Col>
-                         <Grid.Col  span={'content'} offset={{ base: 0, sm: 2 }}>
-                             <Button radius="16px" bg="#FF1441">
-                                 {' '}
-                                 Получить пробный период
-                             </Button>
-                         </Grid.Col>
-                     </Grid>
+                <Grid pt={{ base: 16, sm: 64 }} gutter="xl">
+                    <Grid.Col span={'content'} offset={{ base: 0, sm: 1 }}>
+                        <Text
+                            style={{
+                                color: '#FFF',
+                                fontSize: '20px',
+                                fontWeight: '600',
+                            }}
+                        >
+                            Акция заканчивается через 24 часа!
+                        </Text>
+                    </Grid.Col>
+                    <Grid.Col span={'content'} offset={{ base: 0, sm: 2 }}>
+                        <a href="https://t.me/alexlnos_vpn_support">
+                            <Button radius="16px" bg="#FF1441">
+                                {' '}
+                                Получить пробный период
+                            </Button>
+                        </a>
 
-
+                    </Grid.Col>
+                </Grid>
 
 
             </Container>

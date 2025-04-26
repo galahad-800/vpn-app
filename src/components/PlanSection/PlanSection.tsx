@@ -5,7 +5,7 @@ export function PlanSection() {
         <AppShell.Section>
             <Container px={20} pt={48} pb={36}>
                 <Flex direction={'column'} gap={'md'}>
-                    <Title order={1}
+                    <Title order={2}
                         style={{
                             color: '#2C4D96',
                             fontSize: 'var(--var-title-size-md)',
@@ -26,9 +26,12 @@ export function PlanSection() {
                         Настройте свой тариф для себя или вашего бизнеса
                     </Text>
                     <Box>
-                        <Button radius='16px' bg='#FF1441' size={'lg'} p={'8 16 8 16'}>
-                            Подключить свой тариф
-                        </Button>
+                        <a href="https://t.me/alexlnos_vpn_support">
+                            <Button radius='16px' bg='#FF1441' size={'lg'} p={'8 16 8 16'}>
+                                Подключить свой тариф
+                            </Button>
+                        </a>
+
                     </Box>
                 </Flex>
             </Container>

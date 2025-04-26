@@ -11,7 +11,7 @@ export function CardSection() {
             <Container px={20} pb={36} pt={36}>
                 <Box>
                     <Flex justify={'left'}>
-                        <Title order={1}
+                        <Title order={2}
                             style={{
                                 color: '#FFF',
                                 fontSize: 'var(--var-title-size-md)',

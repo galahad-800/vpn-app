@@ -49,14 +49,16 @@ export function Header() {
                     </Grid.Col>
                     <Grid.Col span={'auto'} ></Grid.Col>
                     <Grid.Col span={'content'} display={{ base: 'none', sm: 'block' }}>
-                        <Button
+                        <a href="https://t.me/alexlnos_vpn_bot"><Button
                             radius={'16px'}
                             style={{
                                 background: '#31DFF6',
                             }}
                         >
+
                             Попробовать за 1 ₽
-                        </Button>
+                        </Button></a>
+
                     </Grid.Col>
 
                     <Grid.Col span={'content'} display={{ base: 'block', sm: 'none' }}>

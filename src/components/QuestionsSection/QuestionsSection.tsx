@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-import { AppShell, Collapse, Container, Flex, Text } from '@mantine/core'
+import { AppShell, Collapse, Container, Flex, Text, Title } from '@mantine/core'
 import { IconChevronDown } from '@tabler/icons-react'
 
 export type FaqItem = {
@@ -55,7 +55,7 @@ export function QuestionsSection() {
         }}>
             <Container px={20}>
                 <Flex justify="left">
-                    <Text
+                    <Title order={2}
                         style={{
                             color: '#2C4D96',
                             fontSize: 'var(--var-title-size-md)',
@@ -63,7 +63,7 @@ export function QuestionsSection() {
                         }}
                     >
                         Часто задаваемые вопросы
-                    </Text>
+                    </Title>
                 </Flex>
             </Container>
 
