@@ -1,4 +1,4 @@
-import { Box, Button, Group, Card, Container, Flex, Text, TextInput } from '@mantine/core'
+import { Box, Button, Group, Card, Container, Flex, Text, TextInput, Title } from '@mantine/core'
 
 export function Access() {
     return (
@@ -8,14 +8,14 @@ export function Access() {
         }}>
             <Container size="xl" p={'xl'}>
                 <Flex justify={'center'}>
-                    <Text style={{
+                    <Title order={1} style={{
                         fontFamily: 'Nunito',
-                        fontSize: '72px',
+                        fontSize: 'var(--var-title-size-md)',
                         fontStyle: 'normal',
                         fontWeight: '700',
                         lineHeight: '88px',
                         color: '#FFF',
-                    }}>Твоя подписка в AlexlNos VPN</Text>
+                    }}>Твоя подписка в AlexlNos VPN</Title>
                 </Flex>
             </Container>
             <Container size="sm">
@@ -29,7 +29,7 @@ export function Access() {
                                 <Group>
                                     <Text style={{
                                         fontFamily: 'Nunito',
-                                        fontSize: '28px',
+                                        fontSize: 'var(--var-aces-size-md)',
                                         fontStyle: 'normal',
                                         fontWeight: '600',
                                         lineHeight: '25px',
@@ -41,7 +41,7 @@ export function Access() {
                                     }}>
                                         <Text style={{
                                             fontFamily: 'Nunito',
-                                            fontSize: '28px',
+                                            fontSize: 'var(--var-access-size-sz)',
                                             fontStyle: 'normal',
                                             fontWeight: '700',
                                             lineHeight: '35px',
@@ -54,7 +54,7 @@ export function Access() {
                                 <Group>
                                     <Text style={{
                                         fontFamily: 'Nunito',
-                                        fontSize: '28px',
+                                        fontSize: 'var(--var-aces-size-md)',
                                         fontStyle: 'normal',
                                         fontWeight: '600',
                                         lineHeight: '25px',
@@ -66,7 +66,7 @@ export function Access() {
                                     }}>
                                         <Text style={{
                                             fontFamily: 'Nunito',
-                                            fontSize: '28px',
+                                            fontSize: 'var(--var-access-size-sz)',
                                             fontStyle: 'normal',
                                             fontWeight: '700',
                                             lineHeight: '35px',
@@ -80,7 +80,7 @@ export function Access() {
                                 <Group>
                                     <Text style={{
                                         fontFamily: 'Nunito',
-                                        fontSize: '28px',
+                                        fontSize: 'var(--var-aces-size-md)',
                                         fontStyle: 'normal',
                                         fontWeight: '600',
                                         lineHeight: '25px',
@@ -92,7 +92,7 @@ export function Access() {
                                     }}>
                                         <Text style={{
                                             fontFamily: 'Nunito',
-                                            fontSize: '20px',
+                                            fontSize: 'var(--var-access-size-sz)',
                                             fontStyle: 'normal',
                                             fontWeight: '600',
                                             lineHeight: '25px',
@@ -107,7 +107,7 @@ export function Access() {
                                 <Group>
                                     <Text style={{
                                         fontFamily: 'Nunito',
-                                        fontSize: '28px',
+                                        fontSize: 'var(--var-aces-size-md)',
                                         fontStyle: 'normal',
                                         fontWeight: '600',
                                         lineHeight: '25px',
@@ -116,7 +116,7 @@ export function Access() {
                                     <Card>
                                         <Text style={{
                                             fontFamily: 'Nunito',
-                                            fontSize: '20px',
+                                            fontSize: 'var(--var-access-size-sz)',
                                             fontStyle: 'normal',
                                             fontWeight: '600',
                                             lineHeight: '25px',
@@ -129,7 +129,7 @@ export function Access() {
                                 <Group>
                                     <Text style={{
                                         fontFamily: 'Nunito',
-                                        fontSize: '28px',
+                                        fontSize: 'var(--var-aces-size-md)',
                                         fontStyle: 'normal',
                                         fontWeight: '600',
                                         lineHeight: '25px',
@@ -138,7 +138,7 @@ export function Access() {
                                     <Card>
                                         <Text style={{
                                             fontFamily: 'Nunito',
-                                            fontSize: '20px',
+                                            fontSize: 'var(--var-access-size-sz)',
                                             fontStyle: 'normal',
                                             fontWeight: '600',
                                             lineHeight: '25px',
@@ -151,7 +151,7 @@ export function Access() {
                                 <Group>
                                     <Text style={{
                                         fontFamily: 'Nunito',
-                                        fontSize: '28px',
+                                        fontSize: 'var(--var-aces-size-md)',
                                         fontStyle: 'normal',
                                         fontWeight: '600',
                                         lineHeight: '25px',
@@ -160,7 +160,7 @@ export function Access() {
                                     <Card>
                                         <Text style={{
                                             fontFamily: 'Nunito',
-                                            fontSize: '20px',
+                                            fontSize: 'var(--var-access-size-sz)',
                                             fontStyle: 'normal',
                                             fontWeight: '600',
                                             lineHeight: '25px',
@@ -194,7 +194,7 @@ export function Access() {
                                     fontWeight: '400',
                                     fontFamily: 'Roboto Condensed',
                                 }}>Именно ее нужно вставлять в программы!</Text>
-                                <Box w={'640px'}>
+                                <Box w={'100%'}>
                                     <TextInput
                                         placeholder="link"
                                         variant="outline"

@@ -1,5 +1,5 @@
 import { Plan, SubscriptionSlider } from '../SubscriptionSlider/SubscriptionSlider.tsx'
-import { AppShell, Container, Flex, Text } from '@mantine/core'
+import { AppShell, Container, Flex, Title } from '@mantine/core'
 
 
 export function PricesSection() {
@@ -38,7 +38,7 @@ export function PricesSection() {
         <AppShell.Section>
             <Container px={20} pt={36}>
                 <Flex justify={'left'}>
-                    <Text
+                    <Title order={1}
                         style={{
                             color: '#2C4D96',
                             fontSize: 'var(--var-title-size-md)',
@@ -46,7 +46,7 @@ export function PricesSection() {
                         }}
                     >
                         Тарифы и цены
-                    </Text>
+                    </Title>
                 </Flex>
             </Container>
             <Container pt={36} pb={36} >

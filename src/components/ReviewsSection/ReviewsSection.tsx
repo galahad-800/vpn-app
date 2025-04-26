@@ -1,11 +1,11 @@
-import { AppShell, Card, Container, Grid, Text } from '@mantine/core'
+import { AppShell, Card, Container, Grid, Text, Title } from '@mantine/core'
 
 
 export function ReviewsSection() {
     return (
         <AppShell.Section style={{ background: '#FF7401' }}>
             <Container px={20} pt={50} pb={65}>
-                <Text
+                <Title order={1}
                     style={{
                         color: '#FFF',
                         fontSize: 'var(--var-title-size-md)',
@@ -13,10 +13,10 @@ export function ReviewsSection() {
                     }}
                 >
                     Отзывы пользователей
-                </Text>
+                </Title>
 
                 <Grid className="review-grid-container">
-                    <Grid.Col span={{ base: 12, sm: 4, md: 3 }}>
+                    <Grid.Col span={{ base: 12, sm: 4, md: 3 }} offset={{ base: 0, sm:2, md: -1 }}>
                         <Card radius="lg">
                             <Text style={{
                                 color: '#373535',

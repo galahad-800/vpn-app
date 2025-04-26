@@ -49,6 +49,31 @@
         --var-title-size-md: 72px
     }
 }
+/*---------------------------------------------------------------------*/
+@media (min-width: 576px) {
+    :root {
+        --var-aces-size-md: 28px
+    }
+}
+@media (min-width: 576px) {
+    :root {
+        --var-access-size-sz: 20px
+    }
+}
+
+@media (min-width: 768px) {
+    :root {
+        --var-access-size-sz: 28px
+    }
+}
+
+
+
+
+
+
+
+/*---------------------------------------------------------------------*/
 
 html, body {
     font-family: "Nunito", sans-serif;

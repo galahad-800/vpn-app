@@ -1,11 +1,11 @@
-import { AppShell, Box, Button, Container, Flex, Text } from '@mantine/core'
+import { AppShell, Box, Button, Container, Flex, Text, Title } from '@mantine/core'
 
 export function PlanSection() {
     return (
         <AppShell.Section>
             <Container px={20} pt={48} pb={36}>
                 <Flex direction={'column'} gap={'md'}>
-                    <Text
+                    <Title order={1}
                         style={{
                             color: '#2C4D96',
                             fontSize: 'var(--var-title-size-md)',
@@ -14,7 +14,7 @@ export function PlanSection() {
                     >
                         {' '}
                         Бизнес-план
-                    </Text>
+                    </Title>
                     <Text
                         style={{
                             color: '#373535',

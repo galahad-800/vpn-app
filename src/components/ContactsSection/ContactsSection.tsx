@@ -1,11 +1,11 @@
 import LogoCard from '../../assets/Block9/LogoCard.png'
-import { AppShell, Card, Container, Flex, Grid, Group, Image, Text } from '@mantine/core'
+import { AppShell, Card, Container, Flex, Grid, Group, Image, Text, Title } from '@mantine/core'
 
 export function ContactsSection() {
     return (
         <AppShell.Section>
             <Container px={20} pt={36} pb={36}>
-                <Text
+                <Title order={1}
                     style={{
                         color: '#2C4D96',
                         fontSize: 'var(--var-title-size-md)',
@@ -13,7 +13,7 @@ export function ContactsSection() {
                     }}
                 >
                     Поддержка и контакты
-                </Text>
+                </Title>
                 <Grid>
                     <Grid.Col offset={{ base: 0, sm: 1 }} span={{ base: 12, xs: 12, sm: 10, md: 9, lg:7 }}>
                         <Card

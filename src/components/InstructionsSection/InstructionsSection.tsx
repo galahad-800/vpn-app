@@ -1,11 +1,11 @@
 import pc from '../../assets/Block3/PC.png'
-import { Container, Text, Image, AppShell, Grid } from '@mantine/core'
+import { Container, Text, Image, AppShell, Grid, Title } from '@mantine/core'
 
 export function InstructionsSection() {
     return (
         <AppShell.Section>
             <Container px={20} pt={36} pb={36}>
-                <Text
+                <Title order={1}
                     style={{
                         color: '#2C4D96',
                         fontSize: 'var(--var-title-size-md)',
@@ -13,7 +13,7 @@ export function InstructionsSection() {
                     }}
                 >
                     Как это работает?
-                </Text>
+                </Title>
                 <Grid align={'center'}>
                     <Grid.Col span={{ base: 12, sm: 4 }} offset={{ base: 0, sm: 1 }}>
                         <Image src={pc} className="gradient" mah={'100%'} />

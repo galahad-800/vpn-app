@@ -10,6 +10,7 @@ import { QuestionsSection } from '../../components/QuestionsSection/QuestionsSec
 import { ReviewsSection } from '../../components/ReviewsSection/ReviewsSection.tsx'
 
 
+
 export function HomePage() {
     return (
         <Layout>

@@ -1,4 +1,4 @@
-import { AppShell, Box, Card, Container, Flex, Grid, Text } from '@mantine/core'
+import { AppShell, Box, Card, Container, Flex, Grid, Text, Title } from '@mantine/core'
 
 export function CardSection() {
 
@@ -8,10 +8,10 @@ export function CardSection() {
                 background: '#EA5DA0',
             }}
         >
-            <Container px={20} pb={36}>
+            <Container px={20} pb={36} pt={36}>
                 <Box>
                     <Flex justify={'left'}>
-                        <Text
+                        <Title order={1}
                             style={{
                                 color: '#FFF',
                                 fontSize: 'var(--var-title-size-md)',
@@ -19,7 +19,7 @@ export function CardSection() {
                             }}
                         >
                             Почему наш VPN?
-                        </Text>
+                        </Title>
                     </Flex>
                     <Grid align={'stretch'}>
                         <Grid.Col span={{ base: 12, xs: 6, md: 4 }}>

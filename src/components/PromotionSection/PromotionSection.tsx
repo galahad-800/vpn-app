@@ -1,4 +1,4 @@
-import { AppShell, Button, Container, Grid, Text } from '@mantine/core'
+import { AppShell, Button, Container, Grid, Text, Title } from '@mantine/core'
 
 export function PromotionSection() {
     return (
@@ -7,8 +7,8 @@ export function PromotionSection() {
                 background: 'radial-gradient(40% 50% at 50% 50%, var(--Primary-Yellow, #FFC301) 0%, var(--Secondary-Dark-Navy, #4E5281) 100%)',
             }}
         >
-            <Container px={20} pb={26}>
-                            <Text
+            <Container px={20} pb={26} pt={26}>
+                            <Title order={1}
                                 style={{
                                     color: '#FFF',
                                     fontSize: '56px',
@@ -16,7 +16,7 @@ export function PromotionSection() {
                                 }}
                             >
                                 Попробуйте за 1 рубль на 7 дней!
-                            </Text>
+                            </Title>
 
                      <Grid pt={{ base: 16, sm: 64 }}  gutter="xl" >
                          <Grid.Col  span={'content'} offset={{ base: 0, sm: 1 }}>
